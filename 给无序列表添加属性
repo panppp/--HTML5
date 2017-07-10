@@ -1,0 +1,5 @@
+# --HTML5
+在js中给列表性的多个span元素添加class属性
+     for(var i=0;i<spanNodes.length;i++){
+         spanNodes[i].className=''};
+       spanNodes[ now % spanNodes.length].className='active';
