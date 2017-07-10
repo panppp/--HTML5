@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        需求：
+        1.两边固定，中间自适应
+        2.先加载middle内容
+        3.等高布局（为实现）
+        */
+        #header,#footer{
+            height: 50px;
+            width: 100%;
+            border: 1px solid;
+            background: gray;
+        }
+        body{
+            min-width: 600px;
+        }
+
+        #content{
+            overflow: hidden;
+            padding: 0 200px;
+        }
+        #left,#right{
+            float: left;
+            width: 200px;
+            background: pink;
+
+        }
+        #middle{
+            float: left;
+            background: green;
+            width: 100%;
+           
+        }
+        #left{
+            position: relative;
+            top:0;
+            left: -200px;
+            margin-left: -100%;
+
+        }
+        #right{
+            position: relative;
+            top:0;
+            right: -200px;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        header
+    </div>
+    <div id="content">
+        <div id="middle">
+            middle
+        </div>
+        <div id="left">
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+            left<br>
+
+        </div>
+        <div id="right">
+            right
+        </div>
+    </div>
+    <div id="footer">
+        footer
+    </div>
+
+</body>
+</html>
